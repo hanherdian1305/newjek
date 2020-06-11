@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('Asia/Denpasar');
+date_default_timezone_set('Asia/Tasikmalaya');
 include "function.php";
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("yellow","[•]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
