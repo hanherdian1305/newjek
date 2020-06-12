@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('Asia/Makassar');
+date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[96m_________________   WARNING !!!!!!!!  _________________ \n";
@@ -100,7 +100,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("yellow",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAKANGOFOOD0906"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0906"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","🔓▶️ Message: ".$message);
@@ -138,7 +138,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(5);
         }
         sleep(15);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0906"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAKANGOFOOD0906"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","# Message: ".$messageboba09);
         sleep(3);
